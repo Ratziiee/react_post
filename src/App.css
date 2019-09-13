@@ -31,3 +31,72 @@
     transform: rotate(360deg);
   }
 }
+
+.Toolbar{
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4985FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+
+.NavBarItems {
+  display: flex;
+  margin: 0;
+  right: 0;
+  padding: 0 10px;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white
+  
+}
+
+.Logo {
+  position: fixed;
+  top: 10px;
+  height: 30px;
+}
+
+.PostBackground {
+  background: rgba(121, 121, 121,0.3);
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  margin:5px 20px
+}
+
+.Button {
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    width: 80px;
+    border: 1px solid #673AB7;
+    cursor: pointer;
+    outline: none;
+    background-color: aliceblue
+}
+
+.AddPost {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellowgreen;
+  margin-top: 56px
+  
+}
+
+
+
