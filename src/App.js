@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment } from './redux/actions/actions'
+import { increment,decrement } from './redux/actions/actions'
 
 function App() {
 
@@ -20,7 +20,8 @@ function App() {
         <h3 style={{marginTop:'100px'}}>
           {isLoggedIn+""}
         </h3>
-      <button onClick={() => dispatch(increment())}>increase</button>
+      <button onClick={() => dispatch(increment(5))}>increase</button>
+      <button onClick={() => dispatch(decrement(5))}>decrement</button>
         <h3 style={{marginTop:'100px'}}>
           {counter+""}
         </h3>
