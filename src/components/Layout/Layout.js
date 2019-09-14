@@ -13,8 +13,8 @@ class Layout extends Component {
                 <BrowserRouter>
                  <NavBar/>
                     <Switch>
-                        <Route path="/" exact component = {Post}/>
-                        <Route path='/addPost' component={AddPost}/>
+                        <Route path="/" exact component = {Post} />
+                        <Route path='/addPost' component={AddPost} />
                     </Switch>
                 </BrowserRouter>
                 

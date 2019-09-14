@@ -94,9 +94,15 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: yellowgreen;
-  margin-top: 56px
-  
+  position: fixed
 }
 
+.Container{
+  margin-top: 100px;
+  /* display: flex;
+  flex-direction: column */
+}
 
-
+.Container textarea{
+  resize: none;
+}

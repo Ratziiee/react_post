@@ -17,9 +17,15 @@ class Post extends Component {
     }
 
     onclickHandler = (index) => {
-        let arr = this.state.posts.splice(index,1);
+        this.state.posts.splice(index,1);
         this.setState({posts : this.state.posts})
 
+    }
+
+    addPostHandler = (data) => {
+        this.setState((prevState)=>{
+            return {posts : prevState.posts.push("")}
+        })        
     }
 
     render() {
@@ -29,7 +35,7 @@ class Post extends Component {
             posts = this.state.posts.map((data,index) => {
                 return <div className='PostBackground'>
                    <p>{data}</p>
-                    <Button index = {index} onDeleteClickHandler={this.onclickHandler}>Delete</Button>
+                    <Button index = {index} clicked = {this.onclickHandler}>Delete</Button>
                 </div>
             })
         }
